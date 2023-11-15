@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Task</title>
+    <link rel="stylesheet" href="{% static '/style.css'  %}" >
+</head>
+<body>
+
+
+    <div id="Menu">
+        <a href="{% url 'home' %}"> <img id=logo src="{% static '/logo.png'  %}" alt="Logo"></a>
+        <a href="/pc" class="menu_option">PCs </a>
+        <a href="/laptop" class="menu_option">Laptops </a>
+        <a href="/promos" class="menu_option">Promos </a>
+        <a href="/product_create_select" class="menu_option">Add product to database </a>
+
+    </div>
+
+    <div id="content">
+    {% block content%}
+
+    {% endblock%}
+    </div>
+</body>
+
+</html>

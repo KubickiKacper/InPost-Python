@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<h1>Our Laptops:</h1>
+<div class="products_list">
+{% for laptop in laptop_list %}
+  <a href = "{% url 'laptop' code=laptop.code %}">
+      <div class="products_list_product_card">
+          <h3>{{ laptop.model.type }} {{ laptop.model.maker }}
+      {{ laptop.model.model}} - {{ laptop.price }}$ </h3>
+    <h4> {{ laptop.speed }}GHz, {{ laptop.ram }}GB RAM, {{ laptop.hd }}GB, {{ laptop.screen }}"</h4>
+    </div></a>
+{% endfor %}
+</div>
+
+<a href = "{% url 'laptop_csv' %}">
+<div class="csv_button">
+    Generate CSV
+</div>
+</a>
+
+{% endblock %}

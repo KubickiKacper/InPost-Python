@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<h1>{{ pc_object.model.type }} {{ pc_object.model.maker }} {{ pc_object.model.model }},
+    Profitability ratio: {{ profitability_ratio }}</h1>
+<h1>Price: {{ pc_object.price }}$</h1><br>
+<h2>Spec:</h2>
+<div class="spec">
+<ul>
+    <li>Speed: {{ pc_object.speed }} GHz</li>
+    <li>Ram: {{ pc_object.ram }} GB</li>
+    <li>Hard drive: {{ pc_object.hd }} GB</li>
+    <li>CD: {{ pc_object.cd }}</li>
+</ul>
+</div>
+
+{% endblock %}

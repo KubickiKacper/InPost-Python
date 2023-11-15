@@ -1,0 +1,4 @@
+id,price,computer:hd,computer:price,computer:speed,computer:ram,computer:code,computer:model,printer:code,printer:model,printer:color,printer:type,printer:price
+13,1124.99,1000,999.99,4,16,182539,PC Dell Vosto 3910,584203,Printer HP Smart,T,Laser,250.00
+14,1260.00,1000,1200.00,4,16,675293,Laptop Lenovo Legion,583203,Printer Canon Pixma,T,Ink,200.00
+15,2520.00,1000,2500.00,4,15,283234,Laptop Apple Macbook Air,683432,Printer Samsung CLX,T,Laser,300.00

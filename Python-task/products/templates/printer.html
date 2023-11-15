@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<h1>{{ printer_object.model.type }} {{ printer_object.model.maker }} {{ printer_object.model.model }}</h1>
+<h1>Price: {{ printer_object.price }}$</h1><br>
+<h2>Spec:</h2>
+<div class="spec">
+<ul>
+    <li>Color: {{ printer_object.color }} </li>
+    <li>Type: {{ printer_object.type }} </li>
+</ul>
+</div>
+
+{% endblock %}

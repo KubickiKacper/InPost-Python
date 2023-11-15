@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<div class="create_options">
+    <a href="{% url 'pc_create' %}"> <div class="create_option_button">Add PC</div></a>
+    <a href="{% url 'laptop_create' %}"> <div class="create_option_button">Add Laptop</div></a>
+    <a href="{% url 'printer_create' %}"> <div class="create_option_button">Add Printer</div></a>
+</div>
+{% endblock %}

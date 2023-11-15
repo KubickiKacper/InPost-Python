@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<h1>Our promotions:</h1>
+<div class="products_list">
+{% for promo in promo_list %}
+<div class="products_list_product_card">
+  <a href = "{% url 'type_check' model_name=promo.computer.model %}"> <h3>{{ promo.computer.type }}
+      {{ promo.computer.maker }}
+      {{ promo.computer.model}}</h3></a> + <a href = "{% url 'type_check' model_name=promo.printer.model %}">
+    {{ promo.printer.type }} {{ promo.printer.maker }} {{ promo.printer.model }} - {{ promo.price }}$ </a>
+</div>
+{% endfor %}
+</div>
+
+<a href = "{% url 'promo_create' %}">
+<div class="create_option_button">
+    Add promo
+</div></a>
+
+<br>
+
+<a href = "{% url 'promo_csv' %}">
+<div class="csv_button">
+    Generate CSV
+</div></a>
+
+{% endblock %}

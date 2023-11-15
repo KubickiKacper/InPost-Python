@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+text-decoration: none;
+font-weight: bold;
+color:black;
+}
+
+h1,h2,h3{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#Menu{
+padding:10px;
+background-color: #3C3C3C;
+width:100%;
+height:90px;
+display: flex;
+justify-content: left;
+
+}
+
+#logo{
+ width: 70px;
+ height: 70px;
+}
+
+.menu_option{
+    color: #FFCD00;
+    font-size:35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:30px;
+    margin-top:20px;
+}
+
+#content{
+    margin:30px;
+}
+
+
+.products_list {
+    padding: 10px;
+    width: 400px;
+}
+
+.products_list_product {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    color: black;
+}
+.products_list_product_card{
+    padding:5px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    color: black;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.csv_button{
+width:130px;
+height:30px;
+background-color: #FFCD00;
+color: white;
+border:None;
+border-radius: 5px;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left:20px;
+}
+
+.spec{
+padding-left:40px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.create_options {
+margin-top:100px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.create_option_button{
+width:130px;
+height:30px;
+background-color: #3C3C3C;
+color: white;
+border:None;
+border-radius: 5px;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left:20px;
+}
+
+.add_form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.add_form input{
+width: 150px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+
+}
+.add_form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.form_container{
+    width:300px;
+}
+
+.submit_button{
+width:130px;
+height:30px;
+background-color: #FFCD00;
+color: white;
+border:None;
+border-radius: 5px;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+}

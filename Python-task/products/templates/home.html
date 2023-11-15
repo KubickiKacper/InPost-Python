@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<h1>Home page</h1>
+<br>
+<h2>All our products:</h2>
+<div class="products_list">
+{% for product in products %}
+  <a class="products_list_product" href = "{% url 'type_check' model_name=product.model %}"> <h3>{{product.type}}
+    {{ product.maker }} {{ product.model}} </h3> </a>
+  {% endfor %}
+</div>
+
+{% endblock %}

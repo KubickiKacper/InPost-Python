@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<h1>{{ laptop_object.model.type }} {{ laptop_object.model.maker }} {{ laptop_object.model.model }},
+    Profitability ratio: {{ profitability_ratio }}</h1>
+<h1>Price: {{ laptop_object.price }}$</h1>
+<h2>Spec:</h2>
+<div class="spec">
+<ul>
+    <li>Speed: {{ laptop_object.speed }}</li>
+    <li>Ram: {{ laptop_object.ram }} GB</li>
+    <li>Hard drive: {{ laptop_object.hd }} GB</li>
+    <li>Screen: {{ laptop_object.screen }}"</li>
+
+</ul>
+</div>
+
+{% endblock %}
